@@ -27,3 +27,5 @@
   (component/system-map
    :http (new-web-server 8010 app-routes)
    :lessc (new-lessc-server "resources/public/less")))
+
+(reloaded.repl/set-init! #'dev-system)
